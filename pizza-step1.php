@@ -18,7 +18,7 @@ print '<form action=\"pizza-step1.php\" method="POST">';
 	print'<input id="medium" type="radio" name="size"><br></br>';
 	print'<input id="large" type="radio" name="size"><br></br>';
 	print'<button type="submit" > Continue </button>';
-print '</form>';
+print '</form>'1;
 print"</body>";
 
 print"</html>";

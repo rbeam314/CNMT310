@@ -1,9 +1,9 @@
-.first {
+h1.first {
 	color: purple;
 	font-family: Arial;
 }
 
-.second {
+h1.second {
 	font-family: Arial;
 }
 
