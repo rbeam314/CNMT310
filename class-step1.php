@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 require_once("Template.php");
 
+=======
+>>>>>>> f6092e4145709284f3dafcc471335ce7b281683a
 $classInfo = array( 
               array("classId" => "039821",
                     "className" => "Production Programming",
@@ -22,10 +25,15 @@ $classInfo = array(
                     "instructor" => "Van Halen",
                     "meetingTime" => "M 18:00-20:30"),
             );
+<<<<<<< HEAD
+=======
+
+>>>>>>> f6092e4145709284f3dafcc471335ce7b281683a
 session_start();
 $_SESSION['chosenClass'] = "";
 $_SESSION['confirmed'] = false;
 unset($_SESSION['chosenClass']);
+<<<<<<< HEAD
 $_SESSION['classInfo'] = $classInfo;
 
 $page = new Template("My Page");
@@ -38,6 +46,19 @@ print $page->getTopSection();
 print "\t<h1>Class Picker - Step 1 of 3</h1>\n";
 print "\t<form action=\"class-step2.php\" method=\"POST\">\n";
 if (isset($_SESSION['error']) && is_array($_SESSION['error']) && count($_SESSION['error']) > 0) {
+=======
+$_SESSION['classInfo'] = $classInfo; //class info session variable pg.2 var dump session. Show everything in session
+
+print "<!doctype html>\n";
+print "<html lang=\"en\">\n";
+print "<head>\n";
+print "\t<title>Class Picker - Step 1 of 3</title>\n";
+print "</head>\n";
+print "<body>\n";
+print "\t<h1>Class Picker - Step 1 of 3</h1>\n";
+print "\t<form action=\"class-step2.php\" method=\"POST\">\n";
+if (isset($_SESSION['error']) && is_array($_SESSION['error']) && count($_SESSION['error']) > 0) { //will loop through each one of the errors
+>>>>>>> f6092e4145709284f3dafcc471335ce7b281683a
   foreach ($_SESSION['error'] as $err => $errMsg) {
     print "\t\t<div class=\"error\">" . $errMsg . "</div>\n";
   }
@@ -48,7 +69,15 @@ foreach ($classInfo as $classDetail) {
         $classDetail['classCode'] . " " . $classDetail['classNum'] . ": " . $classDetail['className'] . "<br>\n";
 }
 print "\t\t<div>\n";
+<<<<<<< HEAD
 print "\t\t\t<input type=\"submit\" name=\"submitform\" value=\"Proceed\">\n";
 print "\t\t</div>\n";
 print "\t</form>\n";
 print $page->getBottomSection();
+=======
+print "\t\t\t<input href=\"class-step2.php\" type=\"submit\" name=\"submitform\" value=\"Proceed\">\n";
+print "\t\t</div>\n";
+print "\t</form>\n";
+print "</body>\n";
+print "</html>\n";
+>>>>>>> f6092e4145709284f3dafcc471335ce7b281683a

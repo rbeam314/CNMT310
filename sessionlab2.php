@@ -8,7 +8,11 @@ if(!isset($_SESSION['firstVisit'])){
 
 	print ("You first visited at "). $_SESSION['firstVisit'];
 	
+<<<<<<< HEAD
 	$_SESSION['secondVisit'] = ($_SERVER['REQUEST_TIME']);
+=======
+	$_SESSION['secondVisit'] = (date("Y-m-d H:i:s",$_SERVER['REQUEST_TIME']));
+>>>>>>> f6092e4145709284f3dafcc471335ce7b281683a
 
 if (isset($_SERVER['REQUEST_TIME'])){
 		$_SESSION['secondVisit'];
